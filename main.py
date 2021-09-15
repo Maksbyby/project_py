@@ -11,4 +11,4 @@ def balanced(expression):
 #print(balanced(input()))
 
 
-balanced('asd(asd)as()')
+balanced('asd(asd)((as()')
