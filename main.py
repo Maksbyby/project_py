@@ -3,8 +3,12 @@ def balanced(expression):
     for x in expression:
         if x == '(':
             stak.append(x)
+
+    for x in expression:
+        if x == ')':
+            stak.pop()
     print (stak)
 #print(balanced(input()))
 
 
-balanced('asd(asd)as())
+balanced('asd(asd)as()')
