@@ -1,0 +1,24 @@
+import math
+# Online Python - IDE, Editor, Compiler, Interpreter
+n = 6
+# кол-во страниц в книге
+p = 5
+# необходимая страница
+
+q = (p - 1) /2
+qq= math.ceil(q)
+#идем с начала кники
+
+ma = (n - p) / 2
+ma1 = math.floor(ma)
+#идем с конца книги
+
+if n %2 == 0 and n-p == 1:
+    ma1+=1
+#случай, если кол-во страниц -1. 
+
+if qq >= ma1:
+    print(ma1)
+else:
+    print(qq)
+# вывод наименьшего пути. 
