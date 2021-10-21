@@ -1,0 +1,14 @@
+# Great idea to iterate over and compare components in a matrix. 
+Looks for max sum in the upper left corner of the matrix. 
+№ Отличная реализация перебора компонентов и поиска максимальной 
+суммы в левом верхнем углу матрицы. 
+
+matrix = [[107,54,128,15],[12,75,110,138],[100,96,34,85],[75,15,28,112]]
+n = int(len(matrix)/2)
+suma = 0
+for i in range(n):
+    for j in range(n):
+        suma += max(max(matrix[i][j],matrix[2*n-i-1][j]),
+        max(matrix[i][2*n-j-1],matrix[2*n-i-1][2*n-j-1]))
+        
+print(suma)
