@@ -1,0 +1,17 @@
+
+#Задача №2 Яндекс Контест, тренировочный. Посадка в самолет.
+
+n = 4
+arr = []
+for i in range(n):
+    a=list(input())
+    arr.append(a)
+print(arr)
+
+m = 7
+data = []
+for i in range(m):
+    b = input().split()
+    data.append(b)
+
+print(data)
