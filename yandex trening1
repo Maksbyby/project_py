@@ -1,0 +1,21 @@
+
+# Яндекс. Тренирочный контест. Задача про Андрея и Кислоту.
+
+def sum(n, l1):
+    a = l1.count(l1[0])
+    b = l1.count(l1[-1])
+    c = a + b
+    
+    if n != c:
+        return ('-1')
+        
+    l2 = sorted(l1)
+    if l1 != l2:
+        return ('-1')
+    
+    count = l1[-1] - l1[0] 
+    return count   
+    
+n = int(input())
+l1 = [int(i) for i in input ().split()] 
+print(sum(n,l1))
