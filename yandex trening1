@@ -6,6 +6,9 @@ def sum(n, l1):
     b = l1.count(l1[-1])
     c = a + b
     
+    if a == n:
+        return ('0')
+        
     if n != c:
         return ('-1')
         
